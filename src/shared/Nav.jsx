@@ -18,16 +18,12 @@ const Nav = () => {
           Education
         </Link>
       </li>
-      <li>
-        <Link to="experience" smooth={true} duration={400}>
-          Experience
-        </Link>
-      </li>
+
       <li>
         <a>Projects</a>
       </li>
       <li>
-         <Link to="contact" smooth={true} duration={400}>
+        <Link to="contact" smooth={true} duration={400}>
           Contact
         </Link>
       </li>
