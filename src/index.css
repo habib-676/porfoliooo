@@ -15,7 +15,7 @@
 
   --color-primary: #007f5f;
   --color-secondary: #023047;
-  --color-accent: #4c956c;
+  --color-accent: #6ede8a;
   --color-success: #aed581;
   --color-warning: #ffca28;
   --color-primary-content: #e0f2f1;
@@ -26,6 +26,10 @@
   --color-base-300: #37474f;
 
   --bc: #1f2937;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 .ubuntu {
   font-family: "Ubuntu", sans-serif;

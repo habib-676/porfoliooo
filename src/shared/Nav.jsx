@@ -1,19 +1,27 @@
 import React from "react";
-
+import { Link } from "react-scroll";
 const Nav = () => {
   const navLinks = (
     <>
       <li>
-        <a >About Me</a>
+        <Link to="about" smooth={true} duration={500}>
+          About
+        </Link>
       </li>
       <li>
-        <a>Skills</a>
+        <Link to="skills" smooth={true} duration={500}>
+          Skills
+        </Link>
       </li>
       <li>
-        <a>Education</a>
+        <Link to="education" smooth={true} duration={500}>
+          Education
+        </Link>
       </li>
       <li>
-        <a>Experience</a>
+        <Link to="experience" smooth={true} duration={500}>
+          Experience
+        </Link>
       </li>
       <li>
         <a>Projects</a>
