@@ -1,6 +1,7 @@
 import React from "react";
 import model from "../../assets/model.png";
 import { FaDownLong, FaRightLong } from "react-icons/fa6";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const Banner = () => {
   return (
@@ -8,11 +9,27 @@ const Banner = () => {
       <div className="text-center flex flex-col  items-center justify-center mb-12 md:mb-0 md:pr-12">
         <p className="text-lg md:text-xl text-primary mb-8">Hi there!</p>
         <h1 className="text-4xl md:text-6xl font-bold ">I'M HABIBUR RAHMAN </h1>
+        <div className="flex gap-7 mt-5 *:hover:text-accent *:hover:scale-150">
+          <a
+            href="https://github.com/habib-676"
+            target="#"
+            className="transition-all duration-300"
+          >
+            <SiGithub size={30} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/wdhabib"
+            target="#"
+            className="transition-all duration-300"
+          >
+            <SiLinkedin size={30} />
+          </a>
+        </div>
         <button className="flex items-center justify-center  border-2 border-accent bg-accent mt-10  rounded-tr-xl  rounded-br-xl ">
           <p className="text-xl md:text-2xl bg-base-100 text-center flex justify-center items-center h-12 px-3 md:w-xs">
-            Full Stack Developer{" "}
+            Full Stack Developer
           </p>
-          <span className="text-base-100 py-3 px-4">
+          <span className="text-base-100 py-3 px-4 hover:*:scale-125 *:transition-all *:duration-200">
             <FaRightLong size={20} className="hidden md:block" />
             <FaDownLong size={20} className="md:hidden" />
           </span>

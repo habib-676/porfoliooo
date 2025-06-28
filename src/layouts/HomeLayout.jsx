@@ -3,6 +3,7 @@ import Footer from "../shared/Footer";
 import Banner from "../Pages/banner/Banner";
 import Skills from "../Pages/skills/Skills";
 import About from "../Pages/about/About";
+import Education from "../Pages/education/Education";
 
 const HomeLayout = () => {
   return (
@@ -14,8 +15,11 @@ const HomeLayout = () => {
       <section id="about">
         <About></About>
       </section>
-      <section>
+      <section id="skills">
         <Skills></Skills>
+      </section>
+      <section id="education">
+        <Education></Education>
       </section>
       <Footer />
     </div>
