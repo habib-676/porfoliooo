@@ -4,22 +4,22 @@ const Nav = () => {
   const navLinks = (
     <>
       <li>
-        <Link to="about" smooth={true} duration={500}>
+        <Link to="about" smooth={true} duration={400}>
           About
         </Link>
       </li>
       <li>
-        <Link to="skills" smooth={true} duration={500}>
+        <Link to="skills" smooth={true} duration={400}>
           Skills
         </Link>
       </li>
       <li>
-        <Link to="education" smooth={true} duration={500}>
+        <Link to="education" smooth={true} duration={400}>
           Education
         </Link>
       </li>
       <li>
-        <Link to="experience" smooth={true} duration={500}>
+        <Link to="experience" smooth={true} duration={400}>
           Experience
         </Link>
       </li>
@@ -27,7 +27,9 @@ const Nav = () => {
         <a>Projects</a>
       </li>
       <li>
-        <a>Contact </a>
+         <Link to="contact" smooth={true} duration={400}>
+          Contact
+        </Link>
       </li>
     </>
   );

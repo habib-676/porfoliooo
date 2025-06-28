@@ -4,6 +4,7 @@ import Banner from "../Pages/banner/Banner";
 import Skills from "../Pages/skills/Skills";
 import About from "../Pages/about/About";
 import Education from "../Pages/education/Education";
+import Contact from "../Pages/contact/Contact";
 
 const HomeLayout = () => {
   return (
@@ -21,7 +22,12 @@ const HomeLayout = () => {
       <section id="education">
         <Education></Education>
       </section>
-      <Footer />
+      <section id="contact">
+        <Contact></Contact>
+      </section>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
