@@ -43,7 +43,7 @@ const Nav = () => {
 
       <li>
         <Link
-          to="education"
+          to="projects"
           smooth={true}
           duration={400}
           className="flex gap-2 hover:text-primary hover:scale-120 transition-all duration-200"

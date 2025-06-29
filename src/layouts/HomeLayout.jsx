@@ -7,6 +7,7 @@ import Education from "../Pages/education/Education";
 import Contact from "../Pages/contact/Contact";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Projects from "../Pages/projects/Projects";
 
 const HomeLayout = () => {
   return (
@@ -25,6 +26,9 @@ const HomeLayout = () => {
       </section>
       <section id="education">
         <Education></Education>
+      </section>
+      <section id="projects">
+        <Projects></Projects>
       </section>
       <section id="contact">
         <Contact></Contact>
