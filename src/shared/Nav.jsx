@@ -1,30 +1,66 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { IoPersonCircleSharp, IoSchoolSharp } from "react-icons/io5";
+import { RiCodeFill } from "react-icons/ri";
+import { BsGearFill } from "react-icons/bs";
+import { GrContact } from "react-icons/gr";
 const Nav = () => {
   const navLinks = (
     <>
       <li>
-        <Link to="about" smooth={true} duration={400}>
-          About
+        <Link
+          to="about"
+          smooth={true}
+          duration={400}
+          className="flex gap-2 hover:text-primary hover:scale-120 transition-all duration-200"
+        >
+          <IoPersonCircleSharp size={20} />
+          <span>About</span>
         </Link>
       </li>
       <li>
-        <Link to="skills" smooth={true} duration={400}>
-          Skills
+        <Link
+          to="skills"
+          smooth={true}
+          duration={400}
+          className="flex gap-2 hover:text-primary hover:scale-120 transition-all duration-200"
+        >
+          <BsGearFill size={20} />
+          <span>Skills</span>
         </Link>
       </li>
       <li>
-        <Link to="education" smooth={true} duration={400}>
-          Education
+        <Link
+          to="education"
+          smooth={true}
+          duration={400}
+          className="flex gap-2 hover:text-primary hover:scale-120 transition-all duration-200"
+        >
+          <IoSchoolSharp size={20} />
+          <span>Education</span>
         </Link>
       </li>
 
       <li>
-        <a>Projects</a>
+        <Link
+          to="education"
+          smooth={true}
+          duration={400}
+          className="flex gap-2 hover:text-primary hover:scale-120 transition-all duration-200"
+        >
+          <RiCodeFill size={20} />
+          <span>Projects</span>
+        </Link>
       </li>
       <li>
-        <Link to="contact" smooth={true} duration={400}>
-          Contact
+        <Link
+          to="contact"
+          smooth={true}
+          duration={400}
+          className="flex gap-2 hover:text-primary hover:scale-120 transition-all duration-200"
+        >
+          <GrContact size={20}/>
+          <span>Contact</span>
         </Link>
       </li>
     </>
@@ -60,11 +96,8 @@ const Nav = () => {
           </div>
           <img src="logo.png" className="w-28" alt="" />
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar  hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 space-x-8">{navLinks}</ul>
         </div>
       </div>
     </div>

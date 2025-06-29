@@ -35,7 +35,7 @@ const HomeLayout = () => {
         duration={500}
         className="flex flex-col items-center mt-20 mb-10 hover:cursor-pointer"
       >
-        <span className="text-accent p-3 transition-all duration-200 hover:animate-pulse hover:rounded-full hover:border-accent hover:border ">
+        <span className="text-accent p-3 transition-all duration-200 hover:animate-pulse hover:scale-110 hover:rounded-full hover:border-accent hover:border ">
           <FaAngleDoubleUp size={30} />
         </span>
         <span className="text-lg text-gray-500">Go to top</span>
