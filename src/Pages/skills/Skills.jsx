@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
   return (
     <div>
-      <div className="mb-9 relative">
+      <div className=" mb-14 relative">
         <div className="w-sm border border-accent hidden md:block absolute left-0 top-1/2"></div>
         <h2 className="text-4xl font-bold text-center ">Skills</h2>
       </div>

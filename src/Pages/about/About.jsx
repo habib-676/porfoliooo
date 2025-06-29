@@ -2,7 +2,7 @@ import Lottie from "lottie-react";
 import aboutLottie from "../../assets/lottie/about-me.json";
 const About = () => {
   return (
-    <div className="my-24">
+    <div className="">
       <div className="mb-9 relative">
         <h2 className="text-4xl font-bold text-center ">About Me</h2>
         <div className="w-sm border border-accent hidden md:block absolute right-0 top-1/2"></div>

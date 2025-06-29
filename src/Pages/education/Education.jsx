@@ -4,8 +4,8 @@ import "@xyflow/react/dist/style.css";
 
 const Education = () => {
   return (
-    <div className="my-20">
-      <div className="mb-9 relative">
+    <div className="">
+      <div className="mb-14 relative">
         <div className="w-sm border border-accent hidden md:block absolute right-0 top-1/2"></div>
         <h2 className="text-4xl font-bold text-center ">Education</h2>
       </div>

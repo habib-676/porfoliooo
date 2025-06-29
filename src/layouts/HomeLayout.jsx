@@ -8,31 +8,49 @@ import Contact from "../Pages/contact/Contact";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import { Link } from "react-scroll";
 import Projects from "../Pages/projects/Projects";
+import AnimatedCursor from "react-animated-cursor";
 
 const HomeLayout = () => {
   return (
     <div className="max-w-11/12 mx-auto text-primary-content relative">
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        showSystemCursor={false}
+        hasBlendMode={true}
+        outerStyle={{
+          border: "3px solid #007f5f",
+        }}
+        innerStyle={{
+          backgroundColor: "#6ede8a",
+        }}
+      />
       <nav className="sticky top-0 z-50">
         <Nav />
       </nav>
-      <section id="banner">
-        <Banner></Banner>
-      </section>
-      <section id="about">
-        <About></About>
-      </section>
-      <section id="skills">
-        <Skills></Skills>
-      </section>
-      <section id="education">
-        <Education></Education>
-      </section>
-      <section id="projects">
-        <Projects></Projects>
-      </section>
-      <section id="contact">
-        <Contact></Contact>
-      </section>
+      <main className="space-y-24">
+        <section id="banner">
+          <Banner></Banner>
+        </section>
+        <section id="about">
+          <About></About>
+        </section>
+        <section id="skills" className="min-h-[80vh]">
+          <Skills></Skills>
+        </section>
+        <section id="education" className="min-h-[80vh]">
+          <Education></Education>
+        </section>
+        <section id="projects" className="min-h-[80vh]">
+          <Projects></Projects>
+        </section>
+        <section id="contact">
+          <Contact></Contact>
+        </section>
+      </main>
       <Link
         to="banner"
         smooth={true}
