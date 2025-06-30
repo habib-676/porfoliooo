@@ -1,53 +1,55 @@
 import React from "react";
+import { motion } from "framer-motion";
+import skillsData from "../../assets/skillsData/skillsData";
+import Marquee from "react-fast-marquee";
+import { NavLink } from "react-router";
 
 const Skills = () => {
+  const middle = Math.ceil(skillsData.length / 2);
+  const firstRow = skillsData.slice(0, middle);
+  const secondRow = skillsData.slice(middle);
+
   return (
     <div>
-      <div className=" mb-14 relative">
+      <motion.div
+        className=" mb-14 relative"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <div className="w-sm border border-accent hidden md:block absolute left-0 top-1/2"></div>
         <h2 className="text-4xl font-bold text-center ">Skills</h2>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
-        <div className="hover:scale-110 transition-all duration-400  hover:cursor-pointer p-8 rounded-2xl border border-blue-500 bg-gradient-to-br from-blue-900/60 via-blue-800/40 to-blue-700/30 backdrop-blur-sm shadow-lg">
-          <h1 className="text-white font-semibold text-lg md:text-3xl">
-            Frameworks
-          </h1>
-          <div className="divider divider-vertical mt-0 mb-1"></div>
-          <img
-            src="https://skillicons.dev/icons?i=fastapi,expressjs,react,tailwindcss,vite&theme=dark&perline=7"
-            alt=""
-          />
-        </div>
-        <div className="hover:scale-110 transition-all duration-400  hover:cursor-pointer p-8 rounded-2xl border border-green-500 bg-gradient-to-br from-green-900/60 via-green-50-800/40 to-green-700/30 backdrop-blur-sm shadow-lg">
-          <h1 className="text-white font-semibold text-lg md:text-3xl">
-            Languages
-          </h1>
-          <div className="divider divider-vertical mt-0 mb-1"></div>
-          <img
-            src="https://skillicons.dev/icons?i=css,html,markdown,c,javascript,nodejs&theme=dark&perline=7"
-            alt=""
-          />
-        </div>
-        <div className="hover:scale-110 transition-all duration-400  hover:cursor-pointer p-8 rounded-2xl border border-yellow-500 bg-gradient-to-br from-yellow-900/60 via-yellow-800/40 to-yellow-700/30 backdrop-blur-sm shadow-lg">
-          <h1 className="text-white font-semibold text-lg md:text-3xl">
-            Tools And Others
-          </h1>
-          <div className="divider divider-vertical mt-0 mb-1"></div>
-          <img
-            src="https://skillicons.dev/icons?i=figma,firebase,git,github,linkedin,netlify&theme=dark&perline=17"
-            alt=""
-          />
-        </div>
-        <div className="hover:scale-110 transition-all duration-400  hover:cursor-pointer p-8 rounded-2xl border border-red-500 bg-gradient-to-br from-red-900/60 via-red-50-800/40 to-red-700/30 backdrop-blur-sm shadow-lg">
-          <h1 className="text-white font-semibold text-lg md:text-3xl">
-            Databases
-          </h1>
-          <div className="divider divider-vertical mt-0 mb-1"></div>
-          <img
-            src="https://skillicons.dev/icons?i=firebase,mongodb&theme=dark&perline=7"
-            alt=""
-          />
-        </div>
+      </motion.div>
+
+      <Marquee speed={30}>
+        {firstRow.map((skill, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center mx-4 w-35 shadow-xl hover:animate-pulse hover:cursor-pointer bg p-8 rounded-2xl bg-gradient-to-tr from-primary to-base-200"
+          >
+            <img src={skill.img} alt="" />
+            <p className="text-center text-sm mt-2">{skill.title}</p>
+          </div>
+        ))}
+      </Marquee>
+      <Marquee direction="right" speed={30}>
+        {secondRow.map((skill, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center mx-4 w-35 mt-8 shadow-xl hover:animate-pulse hover:cursor-pointer bg p-8 rounded-2xl bg-gradient-to-tr from-primary to-base-200"
+          >
+            <img src={skill.img} alt="" />
+            <p className="text-center text-sm mt-2">{skill.title}</p>
+          </div>
+        ))}
+      </Marquee>
+      <div className="flex justify-end mt-8">
+        <NavLink
+          to="/skillDetails"
+          className="btn btn-primary btn-outline mb-8"
+        >
+          See All Skills
+        </NavLink>
       </div>
     </div>
   );

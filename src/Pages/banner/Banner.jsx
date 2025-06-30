@@ -2,6 +2,7 @@ import React from "react";
 import model from "../../assets/model.png";
 import { FaDownLong, FaRightLong } from "react-icons/fa6";
 import { SiGithub, SiLinkedin } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
@@ -25,7 +26,12 @@ const Banner = () => {
             <SiLinkedin size={30} />
           </a>
         </div>
-        <button className="flex items-center justify-center  border-2 border-accent bg-accent mt-10  rounded-tr-xl  rounded-br-xl ">
+        <motion.button
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="flex items-center justify-center  border-2 border-accent bg-accent mt-10  rounded-tr-xl  rounded-br-xl "
+        >
           <p className="text-xl md:text-2xl bg-base-100 text-center flex justify-center items-center h-12 px-3 md:w-xs">
             Full Stack Developer
           </p>
@@ -33,15 +39,20 @@ const Banner = () => {
             <FaRightLong size={20} className="hidden md:block" />
             <FaDownLong size={20} className="md:hidden" />
           </span>
-        </button>
+        </motion.button>
       </div>
-      <div className="md:w-1/2 w-sm flex justify-center md:justify-end ">
+      <motion.div
+        className="md:w-1/2 w-sm flex justify-center md:justify-end "
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <img
           src={model}
           alt="habib"
           className="w-full md:max-w-md max-w-sm object-cover md:mt-10 "
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

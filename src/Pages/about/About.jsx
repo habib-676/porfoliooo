@@ -1,15 +1,21 @@
 import Lottie from "lottie-react";
 import aboutLottie from "../../assets/lottie/about-me.json";
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="">
-      <div className="mb-9 relative">
+      <motion.div
+        className="mb-9 relative"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <h2 className="text-4xl font-bold text-center ">About Me</h2>
         <div className="w-sm border border-accent hidden md:block absolute right-0 top-1/2"></div>
-      </div>
+      </motion.div>
       <div className=" flex flex-col md:flex-row items-center justify-between gap-3">
         {/* animation on the left  */}
-        <div>
+        <div className="flex items-center justify-center">
           <Lottie animationData={aboutLottie} className="w-2/3" loop={true} />
         </div>
 
@@ -32,7 +38,7 @@ const About = () => {
           <div className="flex space-x-4">
             <button className="px-8 py-3 btn btn-accent">Hire Me</button>
             <button className="px-8 py-3 btn btn-outline btn-accent">
-              Download Resume 
+              Download Resume
             </button>
           </div>
         </div>

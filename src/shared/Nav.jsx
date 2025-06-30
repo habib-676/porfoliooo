@@ -68,8 +68,8 @@ const Nav = () => {
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm ">
-        <div className="navbar-start">
-          <div className="dropdown">
+        <div className="navbar-start md:justify-start justify-center w-full md:w-1/2 relative ">
+          <div className="dropdown absolute left-0 top-0">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const Nav = () => {
               {navLinks}
             </ul>
           </div>
-          <img src="logo.png" className="w-28" alt="" />
+          <img src="logo.png" className="md:w-28 w-24" alt="" />
         </div>
         <div className="navbar  hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-8">{navLinks}</ul>
