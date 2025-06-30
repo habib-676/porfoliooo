@@ -45,7 +45,7 @@ const Skills = () => {
       </Marquee>
       <div className="flex justify-end mt-8">
         <NavLink
-          to="/s"
+          to="/skillDetails"
           className="btn btn-primary btn-outline mb-8"
         >
           See All Skills
