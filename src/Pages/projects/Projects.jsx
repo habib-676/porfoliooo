@@ -3,6 +3,7 @@ import { CgLink } from "react-icons/cg";
 import fixitronics from "./images/fixitronics.png";
 import greencircle from "./images/greencircle.png";
 import phudu from "./images/phudu.png";
+import { Link } from "react-router";
 
 const Projects = () => {
   const allProjects = [
@@ -58,15 +59,21 @@ const Projects = () => {
 
               <div className="card-actions">
                 {p.tags.map((tag, index) => (
-                  <div key={index} className="badge badge-soft badge-sm badge-accent">
+                  <div
+                    key={index}
+                    className="badge badge-soft badge-sm badge-accent"
+                  >
                     {tag}
                   </div>
                 ))}
               </div>
               <div className="flex items-center justify-center w-full mt-5">
-                <button className="btn btn-outline btn-ghost ">
+                <Link
+                  to={`/projectDetails/${p.id}`}
+                  className="btn btn-outline btn-ghost "
+                >
                   See details
-                </button>
+                </Link>
               </div>
             </div>
           </div>

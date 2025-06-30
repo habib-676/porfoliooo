@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Fixitronics - Electronics Back to Life",
+    "img": "https://i.ibb.co/G45cmjnp/fixitronics-Dcl-Yk-Xqk.png",
+    "live": "https://fixitronics-app.web.app/",
+    "github": "https://github.com/habib-676/fixitronics-app",
+    "tags": ["React", "MongoDB", "Firebase", "Tailwind"],
+    "challenges": [
+      "JWT token verification for protected routes",
+      "Handling user-based booking status updates",
+      "Dashboard layout and role-based route access"
+    ],
+    "improvements": [
+      "Add payment gateway integration",
+      "Implement service review and rating",
+      "Add admin analytics dashboard"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Greencircle - A Gardeners Community",
+    "img": "https://i.ibb.co/9mXqrzd5/greencircle-Dr0-Rdc-QD.png",
+    "live": "https://gardening-community-69.web.app/",
+    "github": "https://github.com/habib-676/gardening-community-app",
+    "tags": ["React", "MongoDB", "Firebase", "Tailwind"],
+    "challenges": [
+      "Building a community forum structure",
+      "Managing user-posted gardening tips with images",
+      "Implementing responsive layout for post cards"
+    ],
+    "improvements": [
+      "Add private messaging between users",
+      "Enable post likes and comments",
+      "Introduce plant disease detection using AI API"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Phudu - Find Experienced Doctors",
+    "img": "https://i.ibb.co/ZR9mkNF0/phudu-Cmi1-OHMa.png",
+    "live": "https://habib676-phudu-online-doctors.netlify.app/",
+    "github": "https://github.com/habib-676/gardening-community-app",
+    "tags": ["React", "Tailwind", "JavaScript"],
+    "challenges": [
+      "Designing a clean doctor listing UI",
+      "Filtering doctors based on specialty and location",
+      "Ensuring mobile responsiveness for appointment form"
+    ],
+    "improvements": [
+      "Add booking confirmation email service",
+      "Doctor rating and review system",
+      "Role-based access for doctors and patients"
+    ]
+  }
+]

@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../../shared/Nav";
 import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
+import AnimatedCursor from "react-animated-cursor";
 
 const SkillsDetails = () => {
   const navigate = useNavigate();
@@ -12,6 +13,21 @@ const SkillsDetails = () => {
       transition={{ duration: 2 }}
       className="max-w-11/12 mx-auto flex items-center justify-center flex-col gap-10 min-h-screen"
     >
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        showSystemCursor={false}
+        hasBlendMode={true}
+        outerStyle={{
+          border: "3px solid #007f5f",
+        }}
+        innerStyle={{
+          backgroundColor: "#6ede8a",
+        }}
+      />
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
         <div className="hover:scale-110 transition-all duration-400  hover:cursor-pointer p-8 rounded-2xl border border-blue-500 bg-gradient-to-br from-blue-900/60 via-blue-800/40 to-blue-700/30 backdrop-blur-sm shadow-lg">
           <h1 className="text-white font-semibold text-lg md:text-3xl">
