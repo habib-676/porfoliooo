@@ -37,9 +37,14 @@ const About = () => {
           {/* Buttons with exact spacing */}
           <div className="flex space-x-4">
             <button className="px-8 py-3 btn btn-accent">Hire Me</button>
-            <button className="px-8 py-3 btn btn-outline btn-accent">
+            <a
+              className="px-8 py-3 btn btn-outline btn-accent"
+              href="https://drive.google.com/uc?export=download&id=1Rmt_orU8SHAcOkXC_ikvymisdoroIA-h"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
       </div>
